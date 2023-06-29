@@ -14,5 +14,14 @@ const Videocard = ({ info }) => {
    </div>
   );
 };
+export const AdVideocard = ({info})=>{
+  return(
+    <div className="p-1 m-1 border border-green-700">
+      <Videocard info = {info} /> 
+    </div>
+  )
+}
+
+
 
 export default Videocard;
