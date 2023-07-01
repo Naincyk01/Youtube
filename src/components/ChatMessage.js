@@ -1,9 +1,18 @@
 import React from "react";
 
-const ChatMessage = () => {
-  return (
-    <div>ChatMessage</div>
+const ChatMessage = ({name,message}) => {
+  return( 
+  <div className="flex items-center shadow-sm p-2">
+    <img
+          className="h-6"
+          alt="user"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAvSc84dGZsdIkeorcnKHs1WrW--FR9lBjgw&usqp=CAU"
+        />
+        <span className="font-bold px-2">{name}</span>
+        <span>{message}</span>
+  </div>
+
   )
-}
+};
 
 export default ChatMessage;
