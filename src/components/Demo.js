@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useState,useMemo } from "react";
 import { findPrime } from "../utils/helper";
 
 const Demo = () => {
   const [text, setText] = useState(0);
   const [isDarkTheme, setIsDarkTheme] = useState(true);
-
-  console.log("render");
+//console.log("render");
   //heavy operation
-
-  const prime = findPrime(text);
+ 
+  //const prime = findPrime(text);
+  const prime = useMemo(()=>findPrime(text),[text]);
 
   return (
     <div 
     className={
-      "m-4 p-2 w-96 h-96 border border-gray-800" + (isDarkTheme && "bg-pink-300 text-white")}>
+      "m-4 p-2 w-96 h-96 border border-black " + (isDarkTheme && "bg-gray-800 text-white")}>
+        <div>
+          <button className="m-10 p-2 bg-purple-400" onClick={()=>setIsDarkTheme(!isDarkTheme)}>Toggle</button>
+        </div>
       <div>
         <input
           className="border border-black w-72 px-2"
