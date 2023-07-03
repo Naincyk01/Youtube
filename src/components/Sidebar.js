@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { AiFillHome } from "react-icons/ai";
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
@@ -11,7 +12,13 @@ const Sidebar = () => {
     <div className="p-4 shadow-lg w-48">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <AiFillHome/>
+            Home
+            </Link>
+        </li>
+        <li>
+          <Link to="/demo">Demo</Link>
         </li>
         <li>Sports</li>
         <li>Videos</li>
