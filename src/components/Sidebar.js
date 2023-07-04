@@ -2,6 +2,14 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
+import { MdEmojiEvents } from "react-icons/md";
+import { GoVideo } from "react-icons/go";
+import { CgLivePhoto } from "react-icons/cg";
+import { PiMusicNote} from "react-icons/pi";
+import { SiYoutubegaming} from "react-icons/si";
+import { BiSolidMoviePlay } from "react-icons/bi";
+import { FaDemocrat } from "react-icons/fa";
+
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
@@ -13,31 +21,58 @@ const Sidebar = () => {
       <ul>
         <li>
           <Link to="/">
-            <AiFillHome/>
             Home
+            <AiFillHome/>
             </Link>
         </li>
         <li>
-          <Link to="/demo">Demo</Link>
+          <Link to="/demo">Demo
+          <FaDemocrat/>
+          </Link>
         </li>
-        <li>Sports</li>
-        <li>Videos</li>
-        <li>Live</li>
+        <li>
+          Sports
+          <MdEmojiEvents/>
+          </li>
+        <li>
+          Videos
+          <GoVideo/>
+          </li>
+        <li>
+          Live
+<CgLivePhoto/>
+          </li>
         
       </ul>
       <h1 className="font-bold pt-5">Subscriptions</h1>
       <ul>
-        <li>Music</li>
-        <li>Sports</li>
-        <li>Gaming</li>
-        <li>Movies</li>
+        <li>Music
+          <PiMusicNote/>
+        </li>
+        <li>Sports
+        <MdEmojiEvents/>
+        </li>
+        <li>Gaming
+          <SiYoutubegaming/>
+        </li>
+        <li>Movies
+          <BiSolidMoviePlay/>
+        </li>
       </ul>
       <h1 className="font-bold pt-6">Watch Later</h1>
       <ul>
-        <li>Music</li>
-        <li>Sports</li>
-        <li>Gaming</li>
-        <li>Movies</li>
+        <li>Music
+        <PiMusicNote/>
+        </li>
+        <li>Sports
+        <MdEmojiEvents/>
+        </li>
+        <li>Gaming
+        <SiYoutubegaming/>
+        </li>
+        <li>Movies
+        <BiSolidMoviePlay/>
+        </li>
       </ul>
     </div>
   );

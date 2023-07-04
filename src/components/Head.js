@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { YOUTUBE_SEARCH_API } from "../utils/contants";
 import { chacheResults } from "../utils/searchSlice";
 
+import { GoSearch } from "react-icons/go";
+
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
@@ -98,8 +100,8 @@ const Head = () => {
             onFocus={()=>setShowSuggestions(true)}
             onBlur={()=>setShowSuggestions(false)}
           />
-          <button className="border border-gray-400 rounded-r-full px-3 py-1 bg-slate-100">
-            🔍
+          <button className="border border-gray-400 rounded-r-full px-4 p-2 bg-slate-100">
+            <GoSearch/>
           </button>
         </div>
         
