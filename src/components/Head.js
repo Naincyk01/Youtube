@@ -86,7 +86,7 @@ const Head = () => {
           <img
             className="h-5 mx-4"
             alt="youtube-logo"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVy29wwv_3YlQT-l5pe04dj643TVuBTYIPPh7Ggv394a3ejYKEvUfDSVT-gJfUB6MCQ&usqp=CAU"
+            src="https://www.edigitalagency.com.au/wp-content/uploads/Youtube-logo-png.png"
           />
         </a>
       </div>
