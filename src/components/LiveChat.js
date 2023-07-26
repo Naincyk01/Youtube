@@ -18,7 +18,7 @@ const [liveMessage,setliveMessage]= useState("")
       dispatch(
         addMessage({
           name: generateRandomName(),
-          message: makeRandomMessage(15) + "🙂",
+          message: makeRandomMessage(10) + "🙂",
         })
       );
     }, 2000);

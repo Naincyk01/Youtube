@@ -5,8 +5,8 @@ import { AiFillHome } from "react-icons/ai";
 import { MdEmojiEvents } from "react-icons/md";
 import { GoVideo } from "react-icons/go";
 import { CgLivePhoto } from "react-icons/cg";
-import { PiMusicNote} from "react-icons/pi";
-import { SiYoutubegaming} from "react-icons/si";
+import { PiMusicNote } from "react-icons/pi";
+import { SiYoutubegaming } from "react-icons/si";
 import { BiSolidMoviePlay } from "react-icons/bi";
 import { FaDemocrat } from "react-icons/fa";
 
@@ -17,61 +17,67 @@ const Sidebar = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="p-4 shadow-lg w-48">
+    <div className="p-4 shadow-lg w-48 m-2 ">
       <ul>
-        <li>
-          <Link to="/">
-            Home
-            <AiFillHome/>
-            </Link>
+        <li className="flex flex-wrap m-2">
+          <AiFillHome className="mt-1 mr-3" />
+          <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/demo">Demo
-          <FaDemocrat/>
-          </Link>
+
+        <li className=" flex flex-wrap m-2">
+          <FaDemocrat  className="mt-2 mr-3 " />
+          <Link to="/demo">Demo</Link>
         </li>
-        <li>
-          Sports
-          <MdEmojiEvents/>
-          </li>
-        <li>
+
+        <li className="flex flex-wrap m-2">
+        <MdEmojiEvents  className="mt-2 mr-3"/>
+        Sports
+        </li>
+        <li className="flex flex-wrap m-2">
+        <GoVideo  className="mt-1 mr-3"/>
           Videos
-          <GoVideo/>
           </li>
-        <li>
+        <li className="flex flex-wrap m-2">
+          <CgLivePhoto  className="mt-1 mr-3"/>
           Live
-<CgLivePhoto/>
-          </li>
-        
+        </li>
       </ul>
       <h1 className="font-bold pt-5">Subscriptions</h1>
       <ul>
-        <li>Music
-          <PiMusicNote/>
+        <li className="flex flex-wrap m-2">
+          <PiMusicNote  className="mt-1 mr-3"/>
+          Music
         </li>
-        <li>Sports
-        <MdEmojiEvents/>
+        <li className="flex flex-wrap m-2">
+          <MdEmojiEvents className="mt-2 mr-3" />
+          Sports
         </li>
-        <li>Gaming
-          <SiYoutubegaming/>
+        <li className="flex flex-wrap m-2">
+          <SiYoutubegaming  className="mt-1 mr-3"/>
+          Gaming
         </li>
-        <li>Movies
-          <BiSolidMoviePlay/>
+        <li className="flex flex-wrap m-2">
+          <BiSolidMoviePlay  className="mt-1 mr-3"/>
+          Movies
         </li>
       </ul>
       <h1 className="font-bold pt-6">Watch Later</h1>
       <ul>
-        <li>Music
-        <PiMusicNote/>
+        <li className="flex flex-wrap m-2">
+          <PiMusicNote  className="mt-1 mr-3"/>
+          Music
         </li>
-        <li>Sports
-        <MdEmojiEvents/>
+        <li className="flex flex-wrap m-2">
+          <MdEmojiEvents className="mt-1 mr-3"/>
+          Sports
         </li>
-        <li>Gaming
-        <SiYoutubegaming/>
+        <li className="flex flex-wrap m-2">
+          <SiYoutubegaming  className="mt-1 mr-3"/>
+          Gaming
         </li>
-        <li>Movies
-        <BiSolidMoviePlay/>
+        <li className="flex flex-wrap m-2">
+          <BiSolidMoviePlay className="mt-1 mr-3" />
+          Movies
         </li>
       </ul>
     </div>
