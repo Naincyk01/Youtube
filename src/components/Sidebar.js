@@ -17,9 +17,9 @@ const Sidebar = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="p-4 shadow-lg w-48 m-2 ">
+    <div className="p-4 shadow-lg h-fit m-2 ">
       <ul>
-        <li className="flex flex-wrap m-2">
+        <li className="flex flex-wrap m-2 ">
           <AiFillHome className="mt-1 mr-3" />
           <Link to="/">Home</Link>
         </li>

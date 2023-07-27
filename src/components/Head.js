@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { YOUTUBE_SEARCH_API } from "../utils/contants";
 import { chacheResults } from "../utils/searchSlice";
 
-import { GoSearch } from "react-icons/go";
+import { MdOutlineSearch } from "react-icons/md";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -74,17 +74,17 @@ const Head = () => {
   };
   return (
     <div className="grid grid-flow-col p-3 m-1 shadow-lg">
-      <div className="flex col-span-1">
+      <div className="flex col-span-1 mt-1">
         <img
           onClick={() => toggleMenuHandler()}
-          className="h-4 cursor-pointer"
+          className="h-4  mt-1 cursor-pointer"
           alt="menu"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYlx9LyL-6QVyryY45WX228014MY3uK7ojiw&usqp=CAU
           "
         />
         <a href="/">
           <img
-            className="h-5 mx-4"
+            className="h-5 mx-5 "
             alt="youtube-logo"
             src="https://www.edigitalagency.com.au/wp-content/uploads/Youtube-logo-png.png"
           />
@@ -100,8 +100,8 @@ const Head = () => {
             onFocus={()=>setShowSuggestions(true)}
             onBlur={()=>setShowSuggestions(false)}
           />
-          <button className="border border-gray-400 rounded-r-full px-4 p-2 bg-slate-100">
-            <GoSearch/>
+          <button className="border border-gray-400 rounded-r-full py-2 px-4 bg-slate-100">
+            <MdOutlineSearch size={16}/>
           </button>
         </div>
         
